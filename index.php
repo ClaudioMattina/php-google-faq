@@ -75,7 +75,7 @@ $headerList = [
     ],
     [
         'text' => 'Domande frequenti',
-        'active' => 'false'
+        'active' => 'true'
     ],
 ]
 
@@ -95,7 +95,8 @@ $headerList = [
 <body>
     <header>
         <div id="logo">
-
+            <p>LOGOOOOOO</p>
+            <p>Privacy e Termini</p>
         </div>
         <div id="my-list">
             <ul>
