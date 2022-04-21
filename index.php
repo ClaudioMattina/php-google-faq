@@ -57,10 +57,12 @@ $faqs = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link style.css -->
+    <link rel="stylesheet" href="style.css">
     <title>Domande e Risposte</title>
 </head>
 <body>
-    <div>
+    <div class="my-container">
         <?php foreach($faqs as $element){ ?>
             <h1>
                 <?php echo $element['question'] ?>
