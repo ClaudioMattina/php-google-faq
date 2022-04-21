@@ -60,6 +60,15 @@ $faqs = [
     <title>Domande e Risposte</title>
 </head>
 <body>
-    
+    <div>
+        <?php foreach($faqs as $element){ ?>
+            <h1>
+                <?php echo $element['question'] ?>
+            </h1>
+            <p>
+                <?php echo $element['answers'] ?>
+            </p>
+        <?php }?>
+    </div>
 </body>
 </html>
