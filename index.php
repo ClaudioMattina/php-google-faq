@@ -55,6 +55,7 @@ $faqs = [
     ],
     
 ];
+
 ?>
 
 
@@ -74,9 +75,10 @@ $faqs = [
             <h1>
                 <?php echo $element['question'] ?>
             </h1>
-            <p>
-                <?php echo '<ul> $element["answers"] </ul>' ?>   
-            </p>
+            <ul>
+                <?php $paragrafo= $element["answers"] ?>   
+                <?php echo "<li>$paragrafo</li>" ?>  
+            </ul>
         <?php }?>
     </div>
 </body>
