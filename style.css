@@ -4,7 +4,37 @@
     box-sizing: border-box;
 }
 
+header{
+    height: 100px;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+#logo{
+    height: 50%;
+    width: 100%;
+}
+#my-list{
+    height: 50%;
+    width: 100%;
+    
+}
+#my-list ul{
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+}
+#my-list li{
+    list-style: none;
+}
+h1{
+    margin: 30px 0px;
+}
+
 .my-container{
     width: 70%;
     margin: auto;
 }
+

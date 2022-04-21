@@ -56,6 +56,29 @@ $faqs = [
     
 ];
 
+$headerList = [
+    [
+        'text' => 'Introduzione',
+        'active' => 'false'
+    ],
+    [
+        'text' => 'Norme sulla privacy',
+        'active' => 'false'
+    ],
+    [
+        'text' => 'Termini di servizio',
+        'active' => 'false'
+    ],
+    [
+        'text' => 'Tecnologia',
+        'active' => 'false'
+    ],
+    [
+        'text' => 'Domande frequenti',
+        'active' => 'false'
+    ],
+]
+
 ?>
 
 
@@ -70,6 +93,20 @@ $faqs = [
     <title>Domande e Risposte</title>
 </head>
 <body>
+    <header>
+        <div id="logo">
+
+        </div>
+        <div id="my-list">
+            <ul>
+                <?php foreach($headerList as $itemList) {?>
+                    <li>
+                        <?php echo  $itemList['text'] ?>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+    </header>
     <div class="my-container">
         <?php foreach($faqs as $element){ ?>
             <h1>
