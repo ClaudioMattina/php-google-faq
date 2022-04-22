@@ -28,14 +28,18 @@ $faqs = [
     ],
     [
         'question' => 'Perché il mio account è associato a un paese?',
-        'answers' => "Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:
-
-                        La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
-                            Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.
-                            Google LLC, con sede negli Stati Uniti, per il resto del mondo.
-                        La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.
-    
-                    Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account."
+        'answers' => " 
+                    <p>Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:</p> 
+                    <ul> 
+                        <li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:</li>
+                        <ol>
+                            <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
+                            <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
+                        </ol>                        
+                        
+                        <li> La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>
+                    </ul>
+                    <p>Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.</p>"
     ],
     [
         'question' => 'Stabilire il paese associato al tuo account',
@@ -113,10 +117,10 @@ $headerList = [
             <h1>
                 <?php echo $element['question'] ?>
             </h1>
-            <ul>
+            <p>
                 <?php $paragrafo= $element["answers"] ?>   
-                <?php echo "<li>$paragrafo</li>" ?>  
-            </ul>
+                <?php echo $paragrafo ?>  
+            </p>
         <?php }?>
     </div>
 </body>
